@@ -202,7 +202,7 @@ public class OrderApp extends javax.swing.JFrame {
         mealOrder.setNormalOrderPrice();
         
         int totalPrice = mealOrder.getOrder();
-        JOptionPane.showMessageDialog(null,"Combo meal has been ordered..." + "\nTotal Price: " + totalPrice);
+        JOptionPane.showMessageDialog(null,"Combo meal has been ordered...\nTotal Price: " + totalPrice);
 
         
     }//GEN-LAST:event_jButton1ActionPerformed
