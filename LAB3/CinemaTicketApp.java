@@ -199,7 +199,7 @@ public class CinemaTicketApp extends javax.swing.JFrame {
         newCinemaTicket.setPrice(price);
         newCinemaTicket.setSeatNumber(seatNum);
         newCinemaTicket.setTheaterID(theatherID);
-        String output = "Ticket serial number: " + newCinemaTicket.getTicketSerialNumber() +
+        String output = "Default Constructor \n*********************************** \nTicket serial number: " + newCinemaTicket.getTicketSerialNumber() +
                         "\nTicket Date: " + newCinemaTicket.getDate() + "\nTicket Pirce: " + newCinemaTicket.getPrice() +
                         "\nTicket seat number: " + newCinemaTicket.getSeatNumber() + "\nTheather ID: " + newCinemaTicket.getTheaterID();
         jTextArea1.setText(output);
@@ -220,7 +220,7 @@ public class CinemaTicketApp extends javax.swing.JFrame {
         CinemaTicket newCinemaTicket = new CinemaTicket(ticketNum, date, price, seatNum, theatherID);
         
         String output = "Overloaded Constructor \n*********************************** \nTicket serial number: " + newCinemaTicket.getTicketSerialNumber() +
-                        "\nTicket Date: " + newCinemaTicket.getDate() + "\nTicket Pirce: " + newCinemaTicket.getPrice() +
+                        "\nTicket Date: " + newCinemaTicket.getDate() + "\nTicket Pirce: Rs " + newCinemaTicket.getPrice() +
                         "\nTicket seat number: " + newCinemaTicket.getSeatNumber() + "\nTheather ID: " + newCinemaTicket.getTheaterID();
         jTextArea1.setText(output);
     }//GEN-LAST:event_jButton2ActionPerformed
