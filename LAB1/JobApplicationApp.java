@@ -11,7 +11,6 @@ import javax.swing.JOptionPane;
  * @author harsh
  */
 public class JobApplicationApp extends javax.swing.JFrame {
-
     /**
      * Creates new form Ques2_MauriJobs
      */
