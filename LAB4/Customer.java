@@ -16,7 +16,9 @@ public class Customer {
     protected String email;
     protected String gender;
     
-    
+    public Customer() {
+        System.out.println("Default Constructor");
+    }
     public Customer(String NIC, String n, String d, int c, String e, String g) {
         custNIC=NIC;
         name=n;
@@ -29,7 +31,7 @@ public class Customer {
        return custNIC;
    }
    public String getname() {
-       return custNIC;
+       return name;
    }
    public String getdeliveryAddress() {
        return deliveryAddress;

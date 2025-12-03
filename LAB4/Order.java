@@ -3,21 +3,24 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package LAB4;
-
+import java.time.LocalDate;
 /**
  *
  * @author harsh
  */
 public class Order {
     protected String orderID;
-    protected String dateCreated;
+    protected LocalDate dateCreated;
     protected String custID;
     protected String serialID;
-    protected String deliveryDate;
+    protected LocalDate deliveryDate;
     protected String paymentID;
     protected String homeDelivery;
     
-     public Order(String o, String d, String c, String s, String del, String p, String h) {
+    public Order() {
+        System.out.println("Default constructor");
+    }
+     public Order(String o, LocalDate d, String c, String s, LocalDate del, String p, String h) {
           orderID=o;
           dateCreated=d;
           custID=c;
@@ -26,17 +29,26 @@ public class Order {
           paymentID = p;
           homeDelivery=h;
     }
-     public String setorderID() {
+     public String getorderID() {
          return orderID;
      }
-     public String setdateCreated() {
+     public LocalDate getdateCreated() {
          return dateCreated;
      }
-     public String setcustID() {
+     public String getcustID() {
          return custID;
      }
-     public String setserialID() {
+     public String getserialID() {
          return serialID;
+     }
+     public LocalDate getDeliveryDate() {
+         return deliveryDate;
+     }
+     public String getPaymentID() {
+         return paymentID;
+     }
+     public String getHomeDelivery() {
+         return homeDelivery;
      }
      
 }
