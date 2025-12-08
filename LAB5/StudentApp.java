@@ -4,6 +4,8 @@
  */
 package LAB5;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author harsh
@@ -51,6 +53,7 @@ public class StudentApp extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,6 +109,8 @@ public class StudentApp extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/LAB5/image_2025-12-08_144036771-ezgif.com-resize.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -122,19 +127,24 @@ public class StudentApp extends javax.swing.JFrame {
                             .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(78, 78, 78))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(78, 78, 78))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -157,18 +167,18 @@ public class StudentApp extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38))))
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(201, 201, 201)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(104, 104, 104))
+            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(320, 320, 320)
                         .addComponent(jButton1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(201, 201, 201)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
-                .addGap(104, 104, 104))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,7 +239,9 @@ public class StudentApp extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2)
                     .addComponent(jButton3))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(15, 15, 15))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -250,18 +262,98 @@ public class StudentApp extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String s1,s2,s3,s4;
+        s1 = jTextField1.getText();
+        s2 = jTextField2.getText();
+        s3 = jTextField3.getText();
+        s4 = jTextField4.getText();
+        int s5,s6;
+        s5 = Integer.parseInt(s1);
+        s6 = Integer.parseInt(s3);
+        
+        Student emptyStudent = new Student();
+        Student newStudent = new Student(s5,s2,s6,s4);
+        
+        String output = "Student information \n-----------------\nStudent ID: " + newStudent.getStudentID() + 
+                "\nName: " + newStudent.getStudentName() + "\nContact Number: " + newStudent.getContactNumber() +
+                "\nEmail: " + newStudent.getEmail();
+        
+        jTextArea1.setText(output);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        String s1,s2,s3,s4;
+        s1 = jTextField1.getText();
+        s2 = jTextField2.getText();
+        s3 = jTextField3.getText();
+        s4 = jTextField4.getText();
+        int s5,s6;
+        s5 = Integer.parseInt(s1);
+        s6 = Integer.parseInt(s3);
+        
+        String s7,s8;
+        
+        s7 = jTextField5.getText();
+        s8 = jTextField6.getText();
+        
+        int s9 = Integer.parseInt(s7);
+        int s10 = Integer.parseInt(s8);
+        
+        
+        UndergraduateStudent newUndergraduateStudent = new UndergraduateStudent();
+        
+        newUndergraduateStudent.setStudentName(s2);
+        newUndergraduateStudent.setEmail(s4);
+        newUndergraduateStudent.setContactNumber(s6);
+        newUndergraduateStudent.setStudentID(s9);
+        newUndergraduateStudent.setBussPassSerialNumber(s10);
+        
+        String output  = "Undergraduate Student information \n-----------------\nStudent ID: " + newUndergraduateStudent.getStudentID() + 
+                "\nName: " + newUndergraduateStudent.getStudentName() + "\nContact Number: " + newUndergraduateStudent.getContactNumber() +
+                "\nEmail: " + newUndergraduateStudent.getEmail() + "\nBus pass serial number: " + newUndergraduateStudent.getBussPassSerialNumber();
+        jTextArea1.setText(output);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        String s1,s2,s3,s4;
+        s1 = jTextField1.getText();
+        s2 = jTextField2.getText();
+        s3 = jTextField3.getText();
+        s4 = jTextField4.getText();
+        int s5,s6;
+        s5 = Integer.parseInt(s1);
+        s6 = Integer.parseInt(s3);
+        
+        String s7,s8;
+        
+        s7 = jTextField7.getText();
+        s8 = jTextField8.getText();
+        
+        int s9 = Integer.parseInt(s7);
+        int s10 = Integer.parseInt(s8);
+        
+        
+        PostgraduateStudent newPostgraduateStudent = new PostgraduateStudent();
+       
+        
+        newPostgraduateStudent.setStudentName(s2);
+        newPostgraduateStudent.setEmail(s4);
+        newPostgraduateStudent.setContactNumber(s6);
+        newPostgraduateStudent.setStudentID(s9);
+        newPostgraduateStudent.setBussPassSerialNumber(s10);
+        
+        String output  = "Postgraduate Student information \n-----------------\nStudent ID: " + newPostgraduateStudent.getStudentID() + 
+                "\nName: " + newPostgraduateStudent.getStudentName() + "\nContact Number: " + newPostgraduateStudent.getContactNumber() +
+                "\nEmail: " + newPostgraduateStudent.getEmail() + "\nBus pass serial number: " + newPostgraduateStudent.getBussPassSerialNumber();
+        jTextArea1.setText(output);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -306,6 +398,7 @@ public class StudentApp extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
