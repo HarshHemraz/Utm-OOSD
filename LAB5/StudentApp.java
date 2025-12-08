@@ -254,6 +254,14 @@ public class StudentApp extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String s1, s2, s3, s4;
+        
+        s1 = jTextField1.getText();
+        s2 = jTextField2.getText();
+        s3 = jTextField3.getText();
+        s4 = jTextField4.getText();
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
